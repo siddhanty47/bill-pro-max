@@ -1,0 +1,67 @@
+{
+  "name": "bill-pro-max",
+  "version": "1.0.0",
+  "description": "A comprehensive TypeScript library for business management with cloud storage, real-time updates, and modular architecture for handling billing, inventory, customers, challans, deliveries, and payments",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "billing",
+    "calculations",
+    "rental",
+    "finance",
+    "typescript",
+    "business-management",
+    "inventory",
+    "customers",
+    "challans",
+    "deliveries",
+    "payments",
+    "mongodb",
+    "cloud-storage",
+    "websocket",
+    "real-time",
+    "modular-architecture"
+  ],
+  "author": "Siddhant Yadav <siddhanty47@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siddhanty47/bill-pro-max.git"
+  },
+  "bugs": {
+    "url": "https://github.com/siddhanty47/bill-pro-max/issues"
+  },
+  "homepage": "https://github.com/siddhanty47/bill-pro-max#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "mongodb": ">=5.0.0",
+    "ws": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CLOUD_README.md"
+  ]
+}
